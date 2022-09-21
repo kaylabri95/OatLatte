@@ -1,8 +1,8 @@
 # Introduction
 
-Cincinnati Valley Viewers. A Web App with NASA API integration using the MVC Architecture, also implemented "authorization" so folx can sign up and keep track of the constellations that they've been able to identify and when, customize & personalize the app 
-
-
+OatLatte 
+Create a more certain shortterm future by knowing if you need to pick up a shift to make rent way ahead of time.
+Don't let an overdraft catch you off-guard
 
 # Packages/Dependencies used 
 
