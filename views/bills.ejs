@@ -22,7 +22,7 @@
     <h2><%= user.userName %> has <%= left %> bills left to pay this <%= cycle %>.</h2>
     <h3>You need <%= more %> money to pay your bills this <%= cycle %>.</h3>
 
-    <form action="/todos/createBill" method='POST'>
+    <form action="/bills/createBill" method='POST'>
         <input type="text" placeholder="Enter bill" name='billItem'>
         <input type="submit">
     </form>
