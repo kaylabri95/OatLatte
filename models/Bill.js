@@ -23,4 +23,12 @@ const BillSchema = new mongoose.Schema({
   },
 })
 
+const CycleSchema = new mongoose.Schema({
+  paycheck: {
+    type: Number,
+    required: true,
+  },
+})
+
+module.exports = mongoose.model('Cycle', CycleSchema)
 module.exports = mongoose.model('Bill', BillSchema)
