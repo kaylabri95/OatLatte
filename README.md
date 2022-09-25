@@ -14,3 +14,6 @@ bcrypt, connect-mongo, dotenv, ejs, express, express-flash, express-session, mon
 
 `npm install` 
 <!-- 'npm install @mui/material @emotion/react @emotion/styled' -->
+<!-- npx create-react-app my-app
+cd my-app
+npm start -->
