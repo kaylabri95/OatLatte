@@ -1,7 +1,7 @@
 {
   "name": "todo-mvc-auth-local",
   "version": "1.0.0",
-  "description": "",
+  "description": "OatLatte \r Create a more certain shortterm future by knowing if you need to pick up a shift to make rent way ahead of time.\r Don't let an overdraft catch you off-guard",
   "main": "server.js",
   "scripts": {
     "start": "nodemon server.js",
@@ -27,5 +27,13 @@
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
     "validator": "^13.6.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaylabri95/OatLatte.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kaylabri95/OatLatte/issues"
+  },
+  "homepage": "https://github.com/kaylabri95/OatLatte#readme"
 }
