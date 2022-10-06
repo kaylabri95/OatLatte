@@ -69,5 +69,11 @@ async function markUnpaid(){
 }
 
 // Using some logic to produce the number of bills that you are able to pay with the money left in your account
+function cyclesPayable(){
+
+}
 
 // Using logic to produce amount of money you are away from being able to pay all of your bills
+function billsPayable(){
+    
+}
