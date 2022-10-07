@@ -69,11 +69,12 @@ async function markUnpaid(){
 }
 
 // Using some logic to produce the number of bills that you are able to pay with the money left in your account
-function cyclesPayable(){
+// function cyclesPayable(){
+// for cycleId in cyclesPayable, until modulus is remainer, print number of cycles it can cover
+// }
 
-}
-
-// Using logic to produce amount of money you are away from being able to pay all of your bills
-function billsPayable(){
-    
-}
+// // Using logic to produce amount of money you are away from being able to pay all of your bills
+// function billsPayable(){
+// for billId in billsPayable until modulus is not zero, print the number of bills paid and the number of bills you need money for 
+// }
+// (In addition maybe print the amount of money you need to hit the full cycle)
