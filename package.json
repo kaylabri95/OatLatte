@@ -35,5 +35,6 @@
   "bugs": {
     "url": "https://github.com/kaylabri95/OatLatte/issues"
   },
-  "homepage": "https://github.com/kaylabri95/OatLatte#readme"
+  "homepage": "https://github.com/kaylabri95/OatLatte#readme",
+  "devDependencies": {}
 }
