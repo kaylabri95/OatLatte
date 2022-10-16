@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
     <!-- The below cycles through the bills in the database and produces each one on the page -->
     <h1>Bills</h1>
     <ul>
@@ -22,9 +21,6 @@
 
         <h2>You have 2 bills left to pay with this paycheck.</h2>
         <h3>You will need $71 more dollars to pay your last bill this paycheck</h3>
-    <!-- Disregarding for initial MVP and using the above as a placeholder for this function
-        <h2><%= user.userName %> has <%= left %> bills left to pay this <%= cycle %>.</h2>
-    <h3>You need <%= more %> money to pay your bills this <%= cycle %>.</h3> -->
 
     <form action="/bills/createBill" method='POST'>
         <input type="text" placeholder="Enter bill" name='billItem'>
