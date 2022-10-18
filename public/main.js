@@ -2,6 +2,8 @@ const deleteBtn = document.querySelectorAll('.del')
 const billItem = document.querySelectorAll('span.not')
 const billComplete = document.querySelectorAll('span.paid')
 
+// WHERE IS CREATE BILL
+
 Array.from(deleteBtn).forEach((el)=>{
     el.addEventListener('click', deleteBill)
 })
