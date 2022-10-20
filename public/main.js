@@ -70,6 +70,24 @@ async function markUnpaid(){
     }
 }
 
+async function createBill(){
+    const billId = this.parentNode.dataset.id
+    try{
+        const response = await fetch('bills', {
+            method: 'post',
+            headers: {'Content-type': 'application/json'},
+            body: JSON.stringify({
+                'billIdFromJSFile': billId
+            })
+        })
+        const data = await response.json()
+        console.log(data)
+        location.reload()
+    }catch(err){
+        console.log(err)
+    }
+}
+
 // Using some logic to produce the number of bills that you are able to pay with the money left in your account
 // function cyclesPayable(){
 // for cycleId in cyclesPayable, until modulus is remainer, print number of cycles it can cover

@@ -10,26 +10,30 @@
 <body>
     <!-- The below cycles through the bills in the database and produces each one on the page -->
     <h1>Bills</h1>
-    <ul>
-    <% bills.forEach( el => { %>
-            <li class='billItem' data-id='<%=el._id%>'>
-                <span class='<%= el.paid === true ? 'paid' : 'not'%>'><%= el.bill %></span>
-                <span class='del'> Delete </span>
-            </li>
-    <% }) %>    
-    </ul>
-
+    <div>
+        <ul>
+        <% bills.forEach( el => { %>
+                <li class='billItem' data-id='<%=el._id%>'>
+                    <span class='<%= el.paid === true ? 'paid' : 'not'%>'><%= el.bill %></span>
+                    <span class='del'> Delete </span>
+                </li>
+        <% }) %>    
+        </ul>
+    </div>
+    <div>
         <h2>You have 2 bills left to pay with this paycheck.</h2>
         <h3>You will need $71 more dollars to pay your last bill this paycheck</h3>
+    </div>
+    <div>
+        <form action="/bills/createBill" method='POST'>
+            <input type="text" placeholder="Enter bill" name='billItem'>
+            <input type="number" placeholder="Cost" name="billItem">
+            <input type="date" placeholder="Due Date" name="billItem">
+            <input type="submit">
+        </form>
+    </div>
 
-    <form action="/bills/createBill" method='POST'>
-        <input type="text" placeholder="Enter bill" name='billItem'>
-        <input type="number" placeholder="Cost" name="billItem">
-        <input type="date" placeholder="Due Date" name="billItem">
-        <input type="submit">
-    </form>
-
-    <a href="/logout">Logout</a>
+    <footer><a href="/logout">Logout</a></footer>
 
     <script src="js/main.js"></script>
 
