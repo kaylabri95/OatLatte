@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="public/style.css">
+    <%- include('../partials/head'); %>
 </head>
 <body>
+    <header>
+        <%- include('../partials/header'); %>
+    </header>
+
     <!-- The below cycles through the bills in the database and produces each one on the page -->
     <h1>Bills</h1>
     <div>
@@ -33,7 +33,7 @@
         </form>
     </div>
 
-    <footer><a href="/logout">Logout</a></footer>
+    <footer><%- include('../partials/footer'); %></footer>
 
     <script src="js/main.js"></script>
 
