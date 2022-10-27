@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <%- include('/partials/head.ejs'); %>
+    <% include ("partials/head") %>
 </head>
-<body class="">
+<body class="container">
 <header>
-    <%- include('../partials/header'); %>
+    <%- include ("partials/header") %>
 </header>
     <h1>Create a more certain shortterm future by knowing if you need to pick up a shift to make rent way ahead of time.</h1>
     
     <a href="/login"> Login</a>
     <a href="/signup"> Signup</a>
+<footer>
+    <% include ("partials/footer") %>
+</footer>
 </body>
 </html>
