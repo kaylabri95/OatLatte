@@ -7,7 +7,17 @@
 <header>
     <%- include("partials/header"); %>
 </header>
+<div class="card">
+    <h2>
+    <% parties.forEach( el => { %>
+        <li class='partyItem' data-id='<%=el._id%>'>
+            <span class='<%= el.funHad === true ? 'paid' : 'not'%>'><%= el.bill %></span>
+            <span class='del'> Delete </span>
+        </li>
+    <% }) %>  
+    </h2>
 
+</div>
 
 <footer>
     <% include ("partials/footer") %>

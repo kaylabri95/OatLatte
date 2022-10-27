@@ -5,12 +5,12 @@
 </head>
 <body>
 <header>
-    <%- include("partials/header") %>
+    <%- include("partials/header"); %>
 </header>
-<body class="container">
+<body class="card">
 
     <!-- The below cycles through the bills in the database and produces each one on the page -->
-    <h1>Bills</h1>
+    <h1 class="card-title">Bills</h1>
     <div>
         <ul>
         <% bills.forEach( el => { %>
